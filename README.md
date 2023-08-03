@@ -1,4 +1,3 @@
-=== Fullstack BlogApp
 Fullstack web application that implements a simple blog app.
 Automated tests implemented on backend.
 Static files served by express.
