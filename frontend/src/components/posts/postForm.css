@@ -1,0 +1,37 @@
+/* Post form */
+.postFormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 99.9%;
+}
+  
+.postFormContainer-postForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postForm-title {
+  width: 99.8%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 0px;
+  margin-bottom: 5px;
+  background-color: black;
+  border: solid 1px gray;
+  color: white;
+}
+
+.postForm-content {
+  min-width: 100%;
+  max-width: 100%;
+  margin-left: 0px;
+  padding: 0px;
+
+  min-height: 500px;
+  margin-bottom: 5px;
+
+  background-color: black;
+  border: solid 1px gray;
+  color: white;
+}

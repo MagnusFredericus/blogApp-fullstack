@@ -1,0 +1,101 @@
+.profile {
+  width: 100%;
+}
+
+.profileData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.personalData {
+  width: 80%;
+}
+
+.personalData-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.personalData-data p {
+  overflow-wrap: break-word;
+  clear: right;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+}
+
+.personalData-pic {
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  margin-right: 1%;
+  float: left;
+  border: solid 1px gray;
+}
+
+.personalData-pic img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.profile-link {
+  float: right;
+  height: fit-content;
+  color: white;
+}
+
+.profile-link-reject {
+  float: right;
+  height: fit-content;
+  color: white;
+  margin-left: 2px;
+}
+
+/* table portrait to 960 */
+@media only screen and (max-width: 959px) {}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+  .personalData-data p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+  .personalData-pic {
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    margin-right: 1%;
+    float: left;
+    border: solid 1px gray;
+  }
+  
+  .personalData-pic img {
+      max-height: 100px;
+      max-width: 100px;
+  }
+
+  .profileData {
+    height: fit-content;
+  }
+
+  .personalData-data {
+    height: fit-content;
+  }
+
+  .personalData-data p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}

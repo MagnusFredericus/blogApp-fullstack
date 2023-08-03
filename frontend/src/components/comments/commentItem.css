@@ -1,0 +1,45 @@
+.displayComment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 0px;
+    width: 100%;
+    border-bottom: solid 1px gray;
+}
+
+.displayComment-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    overflow: hidden;
+}
+
+.displayComment-header-likeDate  {
+    min-width: 200px;
+    width: 100%;
+}
+
+.displayComment-header-likeDate p {
+    float: right;
+}
+
+.displayComment-content p {
+    margin: 5px 0px 25px 0px;
+}
+
+.displayComment-content textarea {
+    margin: 5px 0px 5px 0px;
+    min-width: 99.3%;
+    max-width: 99,3%;
+    min-height: 100px;
+}
+
+.displayComment-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}

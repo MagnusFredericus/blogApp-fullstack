@@ -1,0 +1,118 @@
+h1, h2, h3, h4, h5, p, input {
+    color: white
+}
+
+.link {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.link--undercover {
+    color: white;
+    text-decoration: none;
+}
+
+.p--keep-breakline {
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap; /* ancient Opera */
+    white-space: -o-pre-wrap; /* newer Opera */
+    white-space: pre-wrap; /* Chrome; W3C standard */
+    word-wrap: break-word; /* IE */
+}
+
+.p--wrap  {
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.h--wrap {
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.p--hidden,
+.h--hidden {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+textarea {
+    background-color: black;
+    border: solid 1px gray;
+    color: white;
+}
+
+.textarea--thin {
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 750px;
+    min-width: 750px;
+    margin-bottom: 5px;
+}
+
+.textarea--big {
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 750px;
+    max-width: 750px;
+}
+
+.textarea--large {
+    min-height: 500px;
+    min-width: 750px;
+    max-width: 750px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.textinput {
+    width: 643;
+}
+
+button, .button {
+    width: 100px;
+    background-color: black;
+    border: solid 1px gray;
+    border-radius: 10px;
+    color: white;
+}
+
+.button--end {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.panel--on-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  
+    width: 100%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    
+    border-bottom: solid 1px gray;
+    color: white;
+}
+
+.display-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+}

@@ -1,0 +1,38 @@
+.userListItemDisplay { 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.userData {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    overflow: hidden;
+}
+  
+.userData-data {
+    margin: 0px;
+    clear: right;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* table portrait to 960 */
+@media only screen and (max-width: 959px) {}
+  
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+    .userItemDisplay {
+        width: 100%;
+        max-width: none;
+        border-bottom: solid 1px gray;
+    }
+}
+  
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {}

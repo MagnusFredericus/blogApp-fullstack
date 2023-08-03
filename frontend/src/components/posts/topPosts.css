@@ -1,0 +1,55 @@
+/* Top posts (aside) */
+.topPosts {
+  height: fit-content;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  border: solid 1px gray;
+}
+
+.topPosts h3 {
+  margin-top: 0px;
+}
+
+.topPosts p,.topPosts h3 {
+  padding: 0% 3%;
+}
+
+.topPosts p {
+  clear: right;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.topPosts a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .topPosts {
+    width: 98%;
+    margin: 1%;
+  }
+
+  .topPosts h3 {
+    margin-top: 10px;
+  }
+}
+
+/* table portrait to 960 */
+@media only screen and (max-width: 959px) {}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+  .topPosts p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }  
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {}

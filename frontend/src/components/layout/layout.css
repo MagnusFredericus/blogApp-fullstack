@@ -1,0 +1,163 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+    background-color: black;
+    border: solid 1px gray;
+}
+  
+.logo h1 {
+    padding-left: 10px;
+}
+  
+.logo h1 a {
+    text-decoration: none;
+    color: lightblue;
+}
+  
+.logo h5 {
+    padding-right: 10px;
+    margin-left: auto;
+    font-style: italic;
+    color: white;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+    background-color: black;
+}
+
+.page {
+    height: 100%;
+    width: 77.16%;
+}
+
+main {
+    display: flex;
+    grid-template: row;
+    min-height: 100vh;
+    width: 100%;
+    border: solid 1px gray;
+}
+
+.mainBox {
+    width: 75%;
+    margin: 1% .5% 1% 1%;
+    padding: 0%;
+    /* border: dashed 1px yellow; */
+}
+
+.sideBox {
+    width: 21.5%;
+    margin: 1% 0% 1% .5%;
+    padding: 0%;
+    /* border: dashed 1px yellow; */
+}
+
+.bottomBox {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 25px;
+    width: 100%;
+
+    background-color: black;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
+
+footer p {
+    padding-right: 5px;
+}
+
+/* table portrait to 960 */
+@media only screen and (max-width: 959px) {
+    .page {
+        height: 100%;
+        width: 95%;
+    }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+    .page {
+        height: 100%;
+        width: 99%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-top: solid 1px gray;
+        border-bottom: solid 1px gray;
+    }
+
+    .mainBox {
+        width: 98%;
+        margin: 1% .5% 1% 1%;
+        padding: 0%;
+        /* border: dashed 1px yellow; */
+    }
+
+    .sideBox {
+        display: none;
+    }
+
+    .bottomBox {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        border-top: solid 1px gray;
+        width: 100%;
+    }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+    .page {
+        height: 100%;
+        width: 99%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-top: solid 1px gray;
+        border-bottom: solid 1px gray;
+    }
+
+    .mainBox {
+        width: 98%;
+        margin: 1% .5% 1% 1%;
+        padding: 0%;
+        /* border: dashed 1px yellow; */
+    }
+
+    .sideBox {
+        display: none;
+    }
+
+    .bottomBox {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        border-top: solid 1px gray;
+        width: 100%;
+    }
+}

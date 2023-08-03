@@ -1,0 +1,67 @@
+/* Post content */
+.postDisplayContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.postDisplayContent-postHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postDisplayContent-postHeader h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.postDisplayContent-postMetadata {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 10px 0px;
+}
+
+.postDisplayContent-postMetadata {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postDisplayContent-postMetadata a {
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  justify-content: space-between;
+}
+
+.postDisplayContent-postMetadata p {
+  margin: 0px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editPostLink {
+  min-width: fit-content;
+  align-content:end;
+  height: fit-content;
+}
+
+.postDisplayContent-panel {
+  margin-top: 10px;
+  padding-bottom: 10px;
+    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+}
+
+/* table portrait to 960 */
+@media only screen and (max-width: 959px) {}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {}

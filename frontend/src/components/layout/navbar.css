@@ -1,0 +1,123 @@
+/* NavBar */
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    
+  margin: 0px;
+  padding: 0px;
+
+  height: 40px;
+  width: 100%;
+
+  background-color: black;
+  border-left: solid 1px gray;
+  border-right: solid 1px gray;
+}
+  
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+  list-style-type: none;
+  position: relative;
+}
+  
+.navBar ul ul {
+  display: none;
+  position: absolute;
+  left: -12px;
+  top: 100%;
+}
+  
+.navBar ul ul.open {
+  display: block;
+  position: absolute;
+  left: -12px;
+  top: 100%;
+}
+
+.navBar ul ul.closed {
+  display: none;
+}
+
+.navBar ul ul li {
+  float: none;
+}
+  
+.navBar ul li > ul li {
+  margin: 0px;
+  padding: 0px;
+  margin: 3px;
+}
+
+.navBar a:hover {
+  font-weight: bold;
+}
+
+.navBar > ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+  
+.navBar ul li a {
+  text-align: center;
+  display: block;
+  width: 100px;
+  text-decoration: none;
+  
+  background-color: black;
+  border: solid 1px gray;
+  border-radius: 10px;
+    
+  color: white;
+    
+  margin-right: 10px;
+}
+  
+ul:first-of-type {
+  margin-left: 10px;
+}
+
+.navBar ul li a.current {
+  font-style: italic;
+}
+
+.navBar-mobile {
+  display: none;   
+}
+
+/* table portrait to 960 */
+@media only screen and (max-width: 959px) {}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+  .navBar {
+    justify-content: flex-end;
+  }
+  
+  .navBar-desktop {
+    display: none;
+  }
+
+  .navBar-mobile {
+    display: block;
+  }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+  .navBar {
+    justify-content: flex-end;
+  }
+  
+  .navBar-desktop {
+    display: none;
+  }
+
+  .navBar-mobile {
+    display: block;
+  }
+}

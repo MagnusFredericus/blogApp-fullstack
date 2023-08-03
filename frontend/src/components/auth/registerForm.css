@@ -1,0 +1,57 @@
+/* Register */
+.registerFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.registerFormContainer-registerForm {
+  width: 50%;
+  margin-top: 50px;
+  display: grid;
+  grid-template: 25px 25px 25px / minmax(65px, 20%) auto;
+  align-items: center;
+}
+
+.registerForm-email,
+.registerForm-password,
+.registerForm-passwordConfirm {
+  width: 98%;
+  background-color: black;
+  border: solid 1px gray;
+}
+
+.registerForm-label {
+  margin: 0px;
+  padding: 0px;
+}
+
+.errorMessage,
+.registerFormContainer a {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+.registerFormContainer-panel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* table portrait to 960 */
+@media only screen and (max-width: 959px) {}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+  .registerFormContainer-registerForm {
+    width: 60%;
+  }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+  .registerFormContainer-registerForm {
+    width: 80%;
+  }
+}

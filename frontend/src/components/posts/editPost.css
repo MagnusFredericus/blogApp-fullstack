@@ -1,0 +1,18 @@
+.postForm-title {
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+    width: 100%;
+}
+
+.postForm-textarea {
+    min-height: 500px;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+.postForm-panel {
+    display: flex;
+    justify-content: flex-end;
+}

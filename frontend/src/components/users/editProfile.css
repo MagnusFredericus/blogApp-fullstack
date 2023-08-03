@@ -1,0 +1,55 @@
+.editProfileData {
+  display: grid;
+  grid-template: 20px 20px 20px / minmax(90px,13.1%) auto;
+  align-items: center;
+  grid-gap: 5px;
+  color: white;
+
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* .editProfileData label {
+  min-width:300px
+} */
+
+.editProfileData-name {
+  background-color: black;
+  border: solid 1px gray;
+}
+
+.editProfileData-lastName {
+  background-color: black;
+  border: solid 1px gray;
+}
+
+.EditBio {
+  display: flex;
+  flex-direction: column;
+}
+
+.editBio-textarea {
+    min-width: 99.3%;
+    max-width: 99.3%;
+    min-height: 300px;
+}
+
+.editProfileForm-panel {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0px 0px 0px;
+}
+
+/* table portrait to 960 */
+@media only screen and (max-width: 959px) {}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+  /* .editProfileData {
+    grid-template: 20px 20px 20px / 28% 80%;
+  } */
+}

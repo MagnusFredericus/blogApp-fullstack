@@ -1,0 +1,8 @@
+X  Include regex to url pages on server and * to 404 pages with wrong pattern
+ok Clean up react 'create-react-app' items and then build
+ok Clean up code on backend
+ok Clean up code on frontend
+ok Test everything is working on docker-compose
+ok add dockerignore file
+   Write notes on app
+   Need to correct  the call to refresh() on React, its logging users out

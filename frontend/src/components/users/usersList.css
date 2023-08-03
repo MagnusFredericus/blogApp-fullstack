@@ -1,0 +1,29 @@
+.usersList {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+}
+
+.usersList a {
+  height: 50px;
+  width: 100%;
+  max-width: 250px;
+  margin-right: 5px;
+  border: solid 1px rgb(68, 68, 65);
+  /* border: dashed 1px pink; */
+}
+
+/* table portrait to 960 */
+@media only screen and (max-width: 959px) {}
+  
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+    .usersList a {
+        width: 100%;
+        max-width: none;
+        margin-right: 0px;  
+    }
+}
+  
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {}
