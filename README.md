@@ -29,10 +29,6 @@ frontend
 - CSS3
 - Axios
 
-others
-- Jest
-- Docker
-
 === Database
 - SQL database with official PostgreSQL docker image
 - Database initialization with .sql files
